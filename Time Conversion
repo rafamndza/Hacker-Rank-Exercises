@@ -7,21 +7,25 @@ Note: - 12:00:00AM on a 12-hour clock is 00:00:00 on a 24-hour clock.
 */
 
 
-function timeConversion(s) {
+  function timeConversion(s) {
 
-  const [hour, minutes, period] = s.split(/[: ]/);
-  
-  let militaryHour = parseInt(hour);
-
-  if (militaryHour === 12 && period === "AM") {
-    militaryHour = 0;
-  }
-  
-  if (militaryHour < 12 && period === "PM") {
-    militaryHour += 12;
-  }
-  
-  return `${militaryHour.toString().padStart(2, "0")}:${minutes}:${"00"}`;
+    let lastTwo = s.substring(8); // AM or PM
+    
+    let fullTime = s.substring(0, 8); // "00:00"00"
+    
+    let times = fullTime.split(':'); // ["00","00","00"]
+    
+    if(lastTwo === "PM") {
+        if(times[0] !== "12") {
+            times[0] = parseInt(times[0]) + 12;
+        }
+    } else {
+        if(times[0] === "12") {
+            times[0] = "00";
+        }
+    }
+    
+    return times.join(':');
 }
 
 
