@@ -1,0 +1,40 @@
+What Object Oriented Programming is ?
+    is a programming paradigm that focuses on the use of objects to organize and structure code.
+    In OOP, code is organized into reusable, modular units called classes, which define the properties (attributes) and 
+    behaviors (methods) of objects. 
+    
+    Objects: are instances of a class, and they can interact with each other through methods,
+    which can modify the object's state or return information about it. OOP provides a way to write code that is easier to 
+    understand, maintain, and extend, and it is widely used in modern software development.
+
+What need/issue OOP solved?
+    OOP was created to solve some of the problems with traditional procedural programming, which focused on breaking down 
+    code into a series of steps to be executed sequentially. 
+    One of the main benefits of OOP is that it enables code to be organized into reusable modules, which can be easily 
+    shared and extended. 
+
+    OOP helps to manage complexity by encapsulating data and behavior, so that changes to one part of the code do not have 
+    unintended consequences on other parts. This makes it easier to write large, complex programs. 
+
+Where can it be used?
+    OOP is used in many different domains, from desktop and mobile applications to web development, gaming, and 
+    artificial intelligence.
+
+---------------------There are four main pillars, or principles, of object-oriented programming (OOP)---------------------
+
+1.Encapsulation: This refers to the idea of bundling data and behavior (methods) together into a single unit, called an 
+object. Encapsulation helps to hide the complexity of the object's implementation and protect its internal state from 
+unwanted access or modification. It also promotes modular design and enables code reuse.
+
+2.Abstraction: This involves focusing on the essential features of an object and ignoring its non-essential details. 
+Abstraction allows us to create generalized concepts (classes) that can be used in many different contexts. 
+By hiding the implementation details of an object and only exposing its public interface, we can simplify the use of the 
+object and make it easier to understand.
+
+3.Inheritance: This allows us to create new classes based on existing ones, inheriting their attributes and methods and 
+adding new ones as needed. Inheritance promotes code reuse and can help to simplify the design of complex systems by 
+grouping similar objects together.
+
+4.Polymorphism: This refers to the ability of objects of different classes to be used interchangeably in the same context. 
+Polymorphism allows us to write generic code that can work with many different types of objects, as long as they share 
+certain common behaviors (methods). This can make code more flexible and extensible.
