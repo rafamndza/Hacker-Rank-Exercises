@@ -1,0 +1,55 @@
+What is SOLID?
+
+
+What issue/need did SOLID principles solve?
+    principles were created with a clear set of objectives:
+    create efficient software,stable and flexible to changes and to allow escalability 
+
+In this sense, the application of SOLID principles is closely related to the understanding and use of design patterns, 
+which will allow us to maintain high cohesion and, therefore, low coupling of software.
+
+
+
+Coupling:
+    in software engineering refers to the degree of interdependence that two software units have with each other, 
+    where software units can be classes, subtypes, methods, modules, functions, libraries, etc.
+    If two software units are completely independent of each other, we say they are decoupled.
+
+Cohesion:
+    is the degree to which different elements of a system remain united to achieve a better result than if they worked 
+    separately. 
+    It refers to the way we can group various software units to create a larger unit.
+
+
+
+Single Responsibility Principle (SRP): 
+    refers to “A class should have one, and only one, reason to change.” that is why
+    this principle is the easiest to explain but the hardest to implement on daily basis uncle bob gave a tip to make it easier
+    “Gather together the things that change for the same reasons. Separate those things that change for different reasons”
+
+
+Open/Closed Principle (OCP): 
+    You should be able to extend a classes behavior, without modifying it. 
+    In other words, the classes you use should be open for extension and closed for modification 
+
+Liskov Substitution Principle (LSP):
+    “Derived classes must be substitutable for their base classes.” Barbara Liskov. 
+    This means that objects should be replaceable by instances of their subtypes without altering the correct functioning of the system, 
+    or in other words: if we use a certain class in a program, we should be able to use any of its subclasses without interfering with the program's 
+    functionality.
+
+Interface Segregation Principle (ISP):
+    “Make fine grained interfaces that are client specific.”
+
+    it means, for a specific purpose.In this sense, according to the Interface Segregation Principle (ISP), it is preferable to have many interfaces 
+    that define few methods than to have one interface forced to implement many methods that will not be used.
+
+
+Dependency Inversion Principle (DIP)":
+    “Depend on abstractions, not on concretions.”   
+    High-level modules should not depend on low-level modules. Both should depend on abstractions.
+    Abstractions should not depend on details. Details should depend on abstractions.
+    The goal of the Dependency Inversion Principle (DIP) is to reduce the dependencies between code modules, that is, to achieve low coupling between 
+    classes.  
+
+
